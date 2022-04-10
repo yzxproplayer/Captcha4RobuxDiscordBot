@@ -7,7 +7,7 @@ ip = requests.get('https://api.my-ip.io/ip').text
 response = requests.post(
     "https://proxy.webshare.io/api/proxy/config/",
     json={"authorized_ips":[ip]},  
-    headers={"Authorization": "9dc40dfa95e6e795eef6d6e2e0c4fff4c59f4c86"}
+    headers={"Authorization": ""}
 )
 
 proxies = open('proxies.txt', 'r').read().splitlines()
@@ -201,4 +201,4 @@ async def cashout(ctx, gamepassid, amount):
             else:
                 await ctx.reply(f'We are currently having issues autherizing your request, we are probably out of stock or you are doing this wrong')
 
-bot.run('OTIzNDMzODU2MjczNjEyODMx.YcP8yw.yYEENAiJWdr3Fxa5X4nXIndAgM8')
+bot.run('')
